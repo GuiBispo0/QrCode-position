@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --branco: hsl(0, 0%, 100%);
+    --cinza-claro: hsl(212, 45%, 89%);
+    --azul-acizentado: hsl(220, 15%, 55%);
+    --azul-escuro: hsl(218, 44%, 22%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--cinza-claro);
+
+}
+
+.conteudo__pai {
+    background-color: var(--branco);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo__imagem {
+    width: 85%;
+    border-radius: 10px;
+    margin: 1.5em 0;
+}
+
+.conteudo__titulo {
+    font-weight: 700;
+    color: var(--azul-escuro);
+    margin: 0.3em 0 1em 0;
+}
+
+.conteudo__texto {
+    font-size: 15px;
+    color: var(--azul-acizentado);
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.rodape {
+    text-align: center;
+    display: block;
+    background-color: hsl(219, 30%, 55%);
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+}
+
+.rodape__titulo {
+    font-weight: 700;
+}
+
+.rodape__texto {
+    font-weight: 700;
+    margin: 0.4em;
+}
+
+.rodape__icon {
+    margin: 0.6em;
+
+}
+.rodape{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    .conteudo__imagem {
+        width: 40%;
+    }
+
+    .conteudo__pai {
+        width: 45em;
+        margin-top: 10em;
+    }
+
+    .conteudo__titulo {
+        width: 40%;
+        margin: 0 0 1em 13.08em;
+    }
+
+    .conteudo__texto {
+        width: 50%;
+        margin: 0 auto 3em auto;
+
+    }
+
+    .conteudo {
+        display: flex;
+        justify-content: center;
+    }
+    .rodape{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+    }
+}
